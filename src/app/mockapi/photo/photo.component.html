@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="table-row" style="font-weight: bold; background-color: #d2d5d8;">
+    <div style="width: 50px; padding-left: 10px;">Id</div>
+    <div style="width: 100px">Title</div>
+    <div style="flex: 1">Url</div>
+    <div style="flex: 1">thumbnailUrl</div>
+  </div>
+
+  <div class="table-row" *ngFor="let photo of photos">
+    <div style="width: 50px; padding-left: 10px;">{{ photo.id }}</div>
+    <div style="width: 100px">{{ photo.title }}</div>
+    <div style="flex: 1">{{ photo.url }}</div>
+    <div style="flex: 1">{{ photo.thumbnailUrl }}</div>
+  </div>
+</div>

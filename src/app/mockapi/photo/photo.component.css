@@ -1,0 +1,15 @@
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0px;
+  font-family: Open Sans,sans-serif;
+  font-size: 20px;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #e2e5e8;
+  padding: 10px 0px;
+}
