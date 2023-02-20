@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="header">
+    Photo Detail
+  </div>
+  <div *ngIf="photo" style="display: flex; gap: 10px; flex-direction: column; padding: 20px">
+    <div class="row">
+      <div class="row-left">Id</div>
+      <div class="row-right">{{ photo.id }} </div>
+    </div>
+    <div class="row">
+      <div class="row-left">Title</div>
+      <div class="row-right">{{ photo.title }} </div>
+    </div>
+    <div class="row">
+      <div class="row-left">Thumbnail</div>
+      <div class="row-right">
+        <div>{{ photo.thumbnailUrl }} </div>
+        <div><img [src]="photo.thumbnailUrl" alt="Thumbnail Url" /></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-left">Photo</div>
+      <div class="row-right">
+        <div>{{ photo.url }} </div>
+        <div><img [src]="photo.url" alt="Photo Url" /></div>
+      </div>
+    </div>
+  </div>
+</div>

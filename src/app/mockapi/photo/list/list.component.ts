@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { PhotoService } from './photo.service';
-import { PhotoInfo } from './photo';
-import { NgOptimizedImage } from '@angular/common'
+import { PhotoService } from '../photo.service';
+import { PhotoInfo } from '../photo';
 
 @Component({
   selector: 'app-photo',
-  templateUrl: './photo.component.html',
-  styleUrls: ['./photo.component.css']
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css']
 })
 export class PhotoComponent {
   photos: PhotoInfo[];

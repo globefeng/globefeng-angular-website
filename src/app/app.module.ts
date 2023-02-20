@@ -8,8 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProgrammingChartComponent } from './programming-chart/programming-chart.component';
-import { PhotoComponent } from './mockapi/photo/photo.component';
+import { PhotoComponent } from './mockapi/photo/list/list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PhotoDetailComponent } from './mockapi/photo/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     FooterComponent,
     ProgrammingChartComponent,
-    PhotoComponent
+    PhotoComponent,
+    PhotoDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border-left: 1px solid #e2e5e8;
+  border-right: 1px solid #e2e5e8;
   border-bottom: 1px solid #e2e5e8;
   padding: 10px 0px;
 }
@@ -18,3 +20,4 @@
   background-color: #f2f5f8;
   cursor: pointer;
 }
+

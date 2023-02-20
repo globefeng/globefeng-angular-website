@@ -14,4 +14,10 @@ export class PhotoService {
 
     return this.http.get<PhotoInfo[]>(url);
   }
+
+  public getPhoto(id: number): Observable<PhotoInfo> {
+    const url = 'https://jsonplaceholder.typicode.com/photos/' + id.toString();
+
+    return this.http.get<PhotoInfo>(url);
+  }
 }

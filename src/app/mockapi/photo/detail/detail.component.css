@@ -1,0 +1,30 @@
+.container {
+  width: 50%;
+  margin: 40px auto;
+  font-family: Open Sans,sans-serif;
+  font-size: 16px;
+  box-shadow: rgb(200 200 200 / 50%) 0px 0px 4px 4px;
+  border-radius: 6px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-left {
+  width: 100px;
+}
+
+.row-right {
+  flex: 1;
+}
