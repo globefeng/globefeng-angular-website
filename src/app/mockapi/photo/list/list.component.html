@@ -4,26 +4,37 @@
   Here is the link: 
   <a href="https://jsonplaceholder.typicode.com/" target="_blank" style="text-decoration: none;">https://jsonplaceholder.typicode.com/</a>
 </div>
-<div style="width: 80%; margin: auto; padding-top: 20px; font-size: 20px; display: flex; justify-content: flex-end;">
-  <button mat-raised-button color="primary">Add</button>
+
+<div style="width: 80%; margin: auto; padding-top: 0px; font-size: 20px; display: flex; justify-content: flex-end;">
+  <div (click)="toggle()" class="addButton">
+    <mat-icon class="addIcon">{{ collapsed ? 'add' : 'remove'}}</mat-icon>
+    <span style="width: 50px">{{ collapsed ? 'Add' : 'Close'}}</span>
+  </div>
 </div>
+
+<div class="collapsible" [@collapse]="collapsed ? 'closed' : 'open'">
+  <div style="margin: 10px">
+    <p>Add new photo info here later</p>
+  </div>
+</div>
+
 <div class="container">
   <div class="table-row" style="font-weight: bold; background-color: #d2d5d8;">
     <div style="width: 50px; padding-left: 10px;">Id</div>
-    <div style="width: 200px; padding-left: 10px;">Thumbnail</div>
     <div style="flex: 1">Info</div>
+    <div style="width: 200px; padding-left: 10px;">Thumbnail</div>
   </div>
 
   <div *ngFor="let photo of photos">
     <a [routerLink]="['/photos', photo.id]" style="text-decoration: none; color: black">
       <div class="table-row">
         <div style="width: 50px; padding-left: 10px;">{{ photo.id }}</div>
-        <div style="width: 200px; padding-left: 10px;">
-          <div><img [src]="photo.thumbnailUrl" alt="photo.url" /></div>
-        </div>
         <div style="flex: 1">
           <div style="margin-bottom: 10px;">Title: {{ photo.title }}</div>
           <div>URL: {{ photo.url }}</div>
+        </div>
+        <div style="width: 200px; padding-left: 10px;">
+          <div><img [src]="photo.thumbnailUrl" alt="photo.url" /></div>
         </div>
       </div>
     </a>

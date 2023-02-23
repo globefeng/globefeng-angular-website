@@ -12,6 +12,8 @@ import { PhotoComponent } from './mockapi/photo/list/list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PhotoDetailComponent } from './mockapi/photo/detail/detail.component';
 import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
