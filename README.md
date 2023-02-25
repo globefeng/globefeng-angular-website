@@ -2,8 +2,6 @@
 
 To see the demo, go to [https://angular.w3element.com](https://angular.w3element.com)
 
-<a href="https://www.google.com/" target="_blank">Google</a>
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
 
 ## Development server
